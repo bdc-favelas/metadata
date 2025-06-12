@@ -1,0 +1,164 @@
+{
+    "id": 3,
+    "name": "mosaic-cbers4a-wpm-pca-abc-sp",
+    "title": "CBERS-4A/WPM - Multispectral and Panchromatic Bands Fusioned Image Mosaic of ABC Paulista - 3 Months",
+    "description": "CBERS-4A/WPM FUSED image mosaic of ABC Paulista  2 meter high-resolution, RGB products, generated using the Principal Components Fusion (PCA) method. This Image Mosaic  was generated based on an existing CBERS-4A/WPM image collection.",
+    "temporal_composition_schema": {
+        "step": 3,
+        "unit": "month",
+        "schema": "Continuous"
+    },
+    "composition_function": "Least CC First",
+    "grid_ref_sys": null,
+    "collection_type": "mosaic",
+    "metadata": {
+        "providers": [
+            {
+                "name": "National Institute for Space Research (INPE)",
+                "roles": [
+                    "host",
+                    "processor",
+                    "producer"
+                ],
+                "url": "https://data.inpe.br/big/",
+                "processing:lineage": "Generation of Earth Observation Mosaic based on CBERS-4 L4 Data Cubes in Cloud Optimized GeoTIFF",
+                "processing:level": "L4",
+                "processing:facility": "BDC/BIG",
+                "processing:software": {
+                    "bdc-cube-builder": "0.4.0"
+                }
+            }
+        ],
+        "license": {
+            "type": "Creative-Commons-Attribution-4.0-International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "mosaic",
+        "cbers",
+        "cbers-4",
+        "wpm",
+        "cloud optimized geotiff",
+        "cog",
+        "earth observation",
+        "brazil"
+    ],
+    "is_public": false,
+    "is_available": true,
+    "category": "eo",
+    "quicklook": [
+        "BAND1",
+        "BAND2",
+        "BAND3"
+    ],
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+     "bands": [
+        {
+            "name": "BAND1",
+            "common_name": "red",
+            "description": "Red channel in the fused true color images.",
+            "min_value": 0,
+            "max_value": 255.0,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.66,
+            "full_width_half_max": 0.06
+        },
+        {
+            "name": "BAND2",
+            "common_name": "green",
+            "description": "Green channel in the fused true color images.",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.555,
+            "full_width_half_max": 0.07
+        },
+        {
+            "name": "BAND3",
+            "common_name": "blue",
+            "description": "Blue channel in the fused true color images.",
+            "min_value": 0,
+            "max_value": 255,
+            "nodata": 0,
+            "scale": 1,
+            "data_type": "int8",
+            "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "resolution_x": 2.0,
+            "resolution_y": 2.0,
+            "resolution_unit": "Meter",
+            "center_wavelength": 0.485,
+            "full_width_half_max": 0.07
+        }
+    ],
+    "summaries": {
+        "platform": [
+            "cbers-4a"
+        ],
+        "constellation": [
+            "cbers-4a"
+        ],
+        "instruments": [
+            "wpm"
+        ],
+        "gsd": [
+            2
+        ],
+        "view:off_nadir": [
+            0
+        ],
+        "proj:epsg": {
+            "minimum": 32718,
+            "maximum": 32725
+        }
+    },
+    "item_assets": {
+        "visual": {
+            "title": "False Color Composition of the mosaic. Contains CBERS-4A/WPM FUSED Bands 1, 2 and 3.",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "roles": [
+                "data"
+            ]
+        },
+        "thumbnail": {
+            "title": "Thumbnail",
+            "type": "image/png",
+            "bands": {
+                "red": "BAND1",
+                "green": "BAND2",
+                "blue": "BAND3"
+            },
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "properties": {
+        "renders": {
+            "visual": {
+                "title": "visual",
+                "assets": [
+                    "visual"
+                ],
+                "resampling": "nearest"
+            }
+        },
+        "bdc:applications": [
+            "BDCExplorer"
+        ]
+    }
+}
