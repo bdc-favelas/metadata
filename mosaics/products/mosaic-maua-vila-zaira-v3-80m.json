@@ -1,0 +1,172 @@
+{
+  "id": 4,
+  "name": "mosaic-maua-vila-zaira-v3-80m",
+  "title": "Mosaic Maua Vila Zaira voo 3 - 80 metros",
+  "description": "Collection of RGB images from DJI Mavic 3M drone, mosaicked using GPS position, flight height (80 meters) and yaw information.",
+  "temporal_composition_schema": null,
+  "composition_function": null,
+  "grid_ref_sys": null,
+  "collection_type": "mosaic",
+  "metadata": {
+    "platform": {
+      "code": "DJI Mavic 3 M",
+      "instruments": ["M3M"]
+    },
+    "processor": {
+      "uri": null,
+      "name": null,
+      "version": null
+    },
+    "sources": [],
+    "contributors": [
+      {
+        "contributorType": "HostingInstitution",
+        "name": "National Institute for Space Research (INPE)",
+        "nameType": "Organizational"
+      },
+      {
+        "contributorType": "ResearchGroup",
+        "name": "CEFAVELA"
+      },
+      {
+        "contributorType": "ResearchGroup",
+        "name": "BDC - Favelas"
+      }
+    ],
+    "fundingReferences": [
+      {
+        "funderName": "Fundacao de Amparo a Pesquisa de Sao Paulo (FAPESP)"
+      }
+    ],
+    "providers": [
+      {
+        "name": "National Institute for Space Research (INPE)",
+        "roles": ["host", "processor", "producer"],
+        "url": "https://data.inpe.br/big/"
+      }
+    ],
+    "license": {
+      "type": "Creative-Commons-Attribution-4.0-International",
+      "uri": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "processing": {
+    "lineage": "Generation of Earth Observation Mosaic based on drone RGB data in Cloud Optimized GeoTIFF",
+    "level": "L4",
+    "facility": "BDC/BIG",
+    "software": {
+      "bdc-cube-builder": "0.4.0"
+    }
+  },
+  "keywords": [
+    "mosaic",
+    "cog",
+    "earth observation",
+    "brazil",
+    "maua",
+    "sp"
+  ],
+  "is_public": true,
+  "is_available": true,
+  "category": "eo",
+  "version": 1,
+  "version_predecessor": null,
+  "version_successor": null,
+  "bands": [
+    {
+      "name": "RED",
+      "common_name": "red",
+      "description": "Red band",
+      "min_value": 0,
+      "max_value": 255,
+      "nodata": 0,
+      "scale": 1,
+      "data_type": "uint8",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "metadata": {
+        "eo": {
+          "resolution_x": 0.029044423862938,
+          "resolution_y": 0.029043906319055,
+          "center_wavelength": 0.65,
+          "full_width_half_max": 0.04,
+          "resolution_unit": "Meter"
+        }
+      }
+    },
+    {
+      "name": "GREEN",
+      "common_name": "green",
+      "description": "Green band",
+      "min_value": 0,
+      "max_value": 255,
+      "nodata": 0,
+      "scale": 1,
+      "data_type": "uint8",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "metadata": {
+        "eo": {
+          "resolution_x": 0.029044423862938,
+          "resolution_y": 0.029043906319055,
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.04,
+          "resolution_unit": "Meter"
+        }
+      }
+    },
+    {
+      "name": "BLUE",
+      "common_name": "blue",
+      "description": "Blue band",
+      "min_value": 0,
+      "max_value": 255,
+      "nodata": 0,
+      "scale": 1,
+      "data_type": "uint8",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "metadata": {
+        "eo": {
+          "resolution_x": 0.029044423862938,
+          "resolution_y": 0.029043906319055,
+          "center_wavelength": 0.475,
+          "full_width_half_max": 0.04,
+          "resolution_unit": "Meter"
+        }
+      }
+    }
+  ],
+  "summaries": {
+    "gsd": [0.029044423862938],
+    "sensor_dim_x_mm": [5.2],
+    "sensor_dim_y_mm": [3.9],
+    "focal_length_mm": [4.34]
+  },
+  "item_assets": {
+    "visual": {
+      "title": "True Color RGB Mosaic from DJI Mavic 3M",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": ["data"]
+    },
+    "thumbnail": {
+      "title": "Thumbnail",
+      "type": "image/png",
+      "bands": {
+        "red": "RED",
+        "green": "GREEN",
+        "blue": "BLUE"
+      },
+      "roles": ["thumbnail"]
+    }
+  },
+  "properties": {
+    "bdc:visual": {
+      "rgb": ["RED", "GREEN", "BLUE"],
+      "rescale": [
+        [0, 255],
+        [0, 255],
+        [0, 255]
+      ]
+    },
+    "proj:epsg": 32723
+  }
+}
+
