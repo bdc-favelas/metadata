@@ -10,7 +10,9 @@
   "metadata": {
     "platform": {
       "code": "DJI Mavic 3 M",
-      "instruments": ["M3M"]
+      "instruments": [
+        "M3M"
+      ]
     },
     "processor": {
       "uri": null,
@@ -41,7 +43,11 @@
     "providers": [
       {
         "name": "National Institute for Space Research (INPE)",
-        "roles": ["host", "processor", "producer"],
+        "roles": [
+          "host",
+          "processor",
+          "producer"
+        ],
         "url": "https://data.inpe.br/big/"
       }
     ],
@@ -83,15 +89,11 @@
       "scale": 1,
       "data_type": "uint8",
       "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "metadata": {
-        "eo": {
-          "resolution_x": 0.029044423862938,
-          "resolution_y": 0.029043906319055,
-          "center_wavelength": 0.65,
-          "full_width_half_max": 0.04,
-          "resolution_unit": "Meter"
-        }
-      }
+      "resolution_x": 0.029044423862938,
+      "resolution_y": 0.029043906319055,
+      "center_wavelength": 0.65,
+      "full_width_half_max": 0.04,
+      "resolution_unit": "Meter"
     },
     {
       "name": "GREEN",
@@ -103,15 +105,11 @@
       "scale": 1,
       "data_type": "uint8",
       "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "metadata": {
-        "eo": {
-          "resolution_x": 0.029044423862938,
-          "resolution_y": 0.029043906319055,
-          "center_wavelength": 0.56,
-          "full_width_half_max": 0.04,
-          "resolution_unit": "Meter"
-        }
-      }
+      "resolution_x": 0.029044423862938,
+      "resolution_y": 0.029043906319055,
+      "center_wavelength": 0.56,
+      "full_width_half_max": 0.04,
+      "resolution_unit": "Meter"
     },
     {
       "name": "BLUE",
@@ -123,28 +121,34 @@
       "scale": 1,
       "data_type": "uint8",
       "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "metadata": {
-        "eo": {
-          "resolution_x": 0.029044423862938,
-          "resolution_y": 0.029043906319055,
-          "center_wavelength": 0.475,
-          "full_width_half_max": 0.04,
-          "resolution_unit": "Meter"
-        }
-      }
+      "resolution_x": 0.029044423862938,
+      "resolution_y": 0.029043906319055,
+      "center_wavelength": 0.475,
+      "full_width_half_max": 0.04,
+      "resolution_unit": "Meter"
     }
   ],
   "summaries": {
-    "gsd": [0.029044423862938],
-    "sensor_dim_x_mm": [5.2],
-    "sensor_dim_y_mm": [3.9],
-    "focal_length_mm": [4.34]
+    "gsd": [
+      0.029044423862938
+    ],
+    "sensor_dim_x_mm": [
+      5.2
+    ],
+    "sensor_dim_y_mm": [
+      3.9
+    ],
+    "focal_length_mm": [
+      4.34
+    ]
   },
   "item_assets": {
     "visual": {
       "title": "True Color RGB Mosaic from DJI Mavic 3M",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": ["data"]
+      "roles": [
+        "data"
+      ]
     },
     "thumbnail": {
       "title": "Thumbnail",
@@ -154,19 +158,33 @@
         "green": "GREEN",
         "blue": "BLUE"
       },
-      "roles": ["thumbnail"]
+      "roles": [
+        "thumbnail"
+      ]
     }
   },
   "properties": {
     "bdc:visual": {
-      "rgb": ["RED", "GREEN", "BLUE"],
+      "rgb": [
+        "RED",
+        "GREEN",
+        "BLUE"
+      ],
       "rescale": [
-        [0, 255],
-        [0, 255],
-        [0, 255]
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ],
+        [
+          0,
+          255
+        ]
       ]
     },
     "proj:epsg": 32723
   }
 }
-
