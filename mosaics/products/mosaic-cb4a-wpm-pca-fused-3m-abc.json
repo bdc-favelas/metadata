@@ -1,6 +1,6 @@
 {
-    "id": 3,
-    "name": "mosaic-cbers4a-wpm-pca-abc-sp",
+    "id": 1,
+    "name": "mosaic-cbers4a-wpm-pca-sp-abc-3m",
     "title": "CBERS-4A/WPM - Multispectral and Panchromatic Bands Fusioned Image Mosaic of ABC Paulista - 3 Months",
     "description": "CBERS-4A/WPM FUSED image mosaic of ABC Paulista  2 meter high-resolution, RGB products, generated using the Principal Components Fusion (PCA) method. This Image Mosaic  was generated based on an existing CBERS-4A/WPM image collection.",
     "temporal_composition_schema": {
