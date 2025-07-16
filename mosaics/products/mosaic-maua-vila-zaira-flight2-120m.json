@@ -1,8 +1,8 @@
 {
-  "id": 4,
-  "name": "mosaic-maua-vila-zaira-v3-80m",
-  "title": "Mosaic Maua Vila Zaira voo 3 - 80 metros",
-  "description": "Collection of RGB images from DJI Mavic 3M drone, mosaicked using GPS position, flight height (80 meters) and yaw information.",
+  "id": null,
+  "name": "mosaic-maua-vila-zaira-flight2-120m",
+  "title": "Mosaic Maua Vila Zaira - Voo 2 - 120 metros",
+  "description": "Collection of RGB images from DJI Mavic 3M drone, mosaicked using GPS position, flight height (120 meters) and yaw information.",
   "temporal_composition_schema": null,
   "composition_function": null,
   "grid_ref_sys": null,
