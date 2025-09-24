@@ -1,7 +1,7 @@
 {
   "id": null,
-  "name": "mosaic-maua-vila-zaira-flight2-120m",
-  "title": "Mosaic Maua Vila Zaira - Voo 2 - 120 metros",
+  "name": "mosaic-maua-vila-carlina-120m",
+  "title": "Mosaic Maua Vila Carlina - 120 metros",
   "description": "Collection of RGB images from DJI Mavic 3M drone, mosaicked using GPS position, flight height (120 meters) and yaw information.",
   "temporal_composition_schema": null,
   "composition_function": null,
@@ -70,7 +70,8 @@
     "earth observation",
     "brazil",
     "maua",
-    "sp"
+    "sp",
+    "favelas"
   ],
   "is_public": true,
   "is_available": true,
