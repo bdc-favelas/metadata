@@ -178,6 +178,38 @@
       "resolution_unit": "Meter",
       "center_wavelength": null,
       "full_width_half_max": null
+    },
+    {
+      "name": "NDVI",
+      "common_name": "ndvi",
+      "description": "Normalized Difference Vegetation Index",
+      "min_value": -10000,
+      "max_value": 10000,
+      "nodata": -9999,
+      "scale": 0.0001,
+      "data_type": "int16",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "resolution_x": 10.0,
+      "resolution_y": 10.0,
+      "resolution_unit": "Meter",
+      "center_wavelength": null,
+      "full_width_half_max": null
+    },
+    {
+      "name": "NDBI",
+      "common_name": "ndbi",
+      "description": "Normalized Difference Built-Up Index",
+      "min_value": -10000,
+      "max_value": 10000,
+      "nodata": -9999,
+      "scale": 0.0001,
+      "data_type": "int16",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "resolution_x": 10.0,
+      "resolution_y": 10.0,
+      "resolution_unit": "Meter",
+      "center_wavelength": null,
+      "full_width_half_max": null
     }
   ],
   "summaries": {
@@ -234,6 +266,20 @@
       "roles": [
         "data"
       ]
+    },
+    "NDVI": {
+      "title": "Band NDVI",
+      "roles": [
+        "data"
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "NDBI": {
+      "title": "Band NDBI",
+      "roles": [
+        "data"
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
     },
     "thumbnail": {
       "title": "Thumbnail",
