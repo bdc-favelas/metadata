@@ -1,5 +1,5 @@
 {
-  "id": 104,
+  "id": null,
   "name": "S2-1M_ABC",
   "title": "Sentinel-2 image Mosaic of ABC Region of Brazilian SP State - 1 Month",
   "description": "Sentinel-2 image mosaic of ABC Region with 10m of spatial resolution. The mosaic was prepared in support of BDC-Favelas project. The false color composition is based on the MSI bands 11, 8A and 4 assigned to RGB channels. The temporal composition encompasses 01-months of images, starting in january 2025 and ending in Dezember 2025, with a best pixel selection approach called Least Cloud Cover First (LCF). More information on LCF can be found at Brazil Data Cube web site (https://brazil-data-cube.github.io/specifications/processing-flow.html#temporal-compositing). This Image Mosaic used more than 882 Sentinel-2 scenes and was generated based on an existing data cube of Sentinel-2 images.",
@@ -9,7 +9,7 @@
     "schema": "Continuous"
   },
   "composition_function": "Least CC First",
-  "grid_ref_sys": "BDC_SM_V2",
+  "grid_ref_sys": null,
   "collection_type": "mosaic",
   "metadata": {
     "providers": [
@@ -59,8 +59,8 @@
   "is_available": true,
   "category": "eo",
   "quicklook": [
-    "B11",
-    "B8A",
+    "B02",
+    "B03",
     "B04"
   ],
   "version": 1,
@@ -178,6 +178,38 @@
       "resolution_unit": "Meter",
       "center_wavelength": null,
       "full_width_half_max": null
+    },
+    {
+      "name": "NDVI",
+      "common_name": "ndvi",
+      "description": "Normalized Difference Vegetation Index",
+      "min_value": -10000,
+      "max_value": 10000,
+      "nodata": -9999,
+      "scale": 0.0001,
+      "data_type": "int16",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "resolution_x": 10.0,
+      "resolution_y": 10.0,
+      "resolution_unit": "Meter",
+      "center_wavelength": null,
+      "full_width_half_max": null
+    },
+    {
+      "name": "NDBI",
+      "common_name": "ndbi",
+      "description": "Normalized Difference Built-Up Index",
+      "min_value": -10000,
+      "max_value": 10000,
+      "nodata": -9999,
+      "scale": 0.0001,
+      "data_type": "int16",
+      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "resolution_x": 10.0,
+      "resolution_y": 10.0,
+      "resolution_unit": "Meter",
+      "center_wavelength": null,
+      "full_width_half_max": null
     }
   ],
   "summaries": {
@@ -234,6 +266,20 @@
       "roles": [
         "data"
       ]
+    },
+    "NDVI": {
+      "title": "Band NDVI",
+      "roles": [
+        "data"
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    },
+    "NDBI": {
+      "title": "Band NDBI",
+      "roles": [
+        "data"
+      ],
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
     },
     "thumbnail": {
       "title": "Thumbnail",
