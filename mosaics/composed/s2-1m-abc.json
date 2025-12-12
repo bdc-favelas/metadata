@@ -10,7 +10,7 @@
   },
   "composition_function": "Least CC First",
   "grid_ref_sys": null,
-  "collection_type": "mosaic",
+  "collection_type": "cube",
   "metadata": {
     "providers": [
       {
@@ -132,22 +132,6 @@
       "full_width_half_max": 0.106
     },
     {
-      "name": "B11",
-      "common_name": "swir16",
-      "description": "SWIR 1 (band 11)",
-      "min_value": 0,
-      "max_value": 10000,
-      "nodata": 0,
-      "scale": 0.0001,
-      "data_type": "uint16",
-      "mime_type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "resolution_x": 10.0,
-      "resolution_y": 10.0,
-      "resolution_unit": "Meter",
-      "center_wavelength": 1.6137,
-      "full_width_half_max": 0.091
-    },
-    {
       "name": "SCL",
       "common_name": "quality",
       "description": "Scene classification layer",
@@ -241,13 +225,6 @@
     },
     "B08": {
       "title": "Band nir",
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
-      "roles": [
-        "data"
-      ]
-    },
-    "B11": {
-      "title": "Band swir16",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data"
