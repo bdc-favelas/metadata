@@ -10,7 +10,7 @@
   },
   "composition_function": "Least CC First",
   "grid_ref_sys": null,
-  "collection_type": "mosaic",
+  "collection_type": "cube",
   "metadata": {
     "providers": [
       {
